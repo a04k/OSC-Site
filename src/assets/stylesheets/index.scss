@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@font-face {
+  font-family: 'marlinB';
+  src: url('../fonts/MarlinSoftSQ-Bold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'abcB';
+  src: url('../fonts/ABCFavoritMono-Bold.woff2') format('woff2');
+}
+:root {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  color-scheme: light dark;
+  background-color: #101010;
+  position: relative; 
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/noise.png') repeat; 
+    opacity: .4; 
+    pointer-events: none;
+  }
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+  &:hover {
+    color: #535bf2;
+}
+}

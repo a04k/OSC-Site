@@ -1,0 +1,73 @@
+.home {
+  position: relative; 
+}
+
+.hero {
+  display: flex; 
+  padding-top: 5vh;
+  height: 85vh;
+  position: relative; 
+  #osctxt {
+    font-size: 8rem;
+    color: rgb(204, 128, 28);
+    font-family: abcB;
+    width: 35%;
+    line-height: 7rem;
+
+    #cursor {
+      font-size: 5rem;
+    }
+  }
+
+  .more {
+    position: absolute;
+    bottom: 5vh;
+    left: 50%; 
+    transform: translateX(-50%); 
+
+    h3{
+      font-family: jetbrains mono;
+      color: #f9d120;
+    }
+    button{
+      background: none;
+      border: none;
+    }
+    &:hover{
+      cursor: pointer;
+    }
+
+    img {
+      height: 30px; 
+    }
+  }
+}
+
+.About {
+  height: 100vh;
+  flex-direction: column;
+  font-family: jetbrains mono;
+
+  h1{
+    font-size: 5rem;
+    margin-right: 10vw;
+    color:rgb(204, 128, 28);
+    margin-bottom: 2vh
+  }
+  h2{
+    color: #f9c320;
+    font-size: 2.5rem;
+  }
+  p{
+    font-size: 1.3rem;
+    a{
+      text-decoration: underline 1px dashed;  
+      color:#f9d120;
+    }
+  }
+}
+
+// .footer {
+//   position: absolute;
+//   width: 100%;
+// }
