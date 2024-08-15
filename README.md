@@ -12,7 +12,7 @@
 
 ## Setting up your local dev Environment
 
---First install the requirements and node modules by running the install script 
+### First install the requirements and node modules by running the install script 
 
 ```bash
 npm install
@@ -20,7 +20,7 @@ npm install
 bun install
 ```
 
---Then run your local development envrionment
+### Then run your local development envrionment
 
 ```bash
 npm run dev
