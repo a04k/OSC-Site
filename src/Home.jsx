@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import './assets/stylesheets/home.scss';
 import Arrow from '../src/assets/images/arrow.svg'; 
+import Bg from './Components/bg';
 
 
 export default function Home() {
@@ -20,7 +21,10 @@ export default function Home() {
   return (
     <div className="home">
       <div className="hero">
-        <h1 id="osctxt">{text1}<span id="cursor"><Cursor /></span></h1>
+        
+        {/* <h1 className="aB">{'>'}</h1> */}
+        
+        <h1 id="osctxt"><span className='OSCText'>{text1}</span><span id="cursor"><Cursor /></span></h1>
         <div className='more' onClick={handleScroll}>
           <h3>MORE</h3>
           <button  className="arrow-button">

@@ -5,10 +5,19 @@
 .hero {
   user-select: none; 
   display: flex; 
-  padding-top: 5vh;
+  margin-top: 5vh;
   height: 85vh;
   position: relative; 
+  /* .aB{
+      user-select: text ; 
+      font-family: jetbrains mono;
+      font-size: 8rem;
+      color: #f5b240;
+      
+  } */
   #osctxt {
+    /* margin-left: 2vw; */
+    /* padding-top:3.4vh; */
     font-size: 8rem;
     color: rgb(204, 128, 28);
     font-family: abcB;
@@ -47,6 +56,8 @@
     }
   }
 }
+
+
 
 .About {
   height: 100vh;

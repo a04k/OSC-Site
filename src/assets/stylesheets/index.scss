@@ -9,8 +9,8 @@
 }
 
 :root {
-  padding-left: 10vw;
-  padding-right: 10vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
   color-scheme: light dark;
   background-color: #0a0a0a;
   position: relative; 
@@ -73,4 +73,21 @@ a {
         padding: 1rem;
         text-align: center;
     }
+}
+
+
+svg {
+  position: absolute;
+  top: 0;
+  margin-top:23vh;
+  margin-left:68vw;
+  filter: blur(400px);
+  @keyframes colorChange1 {
+    0%, 100% { fill: var(--color1, rgb(204, 128, 28)); } // Use default color if var(--color1) is not defined
+    50% { fill: var(--color2, #f9c320); } // Use default color if var(--color2) is not defined
+  }
+
+  path {
+    animation: colorChange1 8s infinite linear;
+  }
 }
