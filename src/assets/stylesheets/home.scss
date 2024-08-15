@@ -27,7 +27,11 @@
 
     h3{
       font-family: jetbrains mono;
-      color: #f9d120;
+      color: #ffffff;
+      
+      &:hover{
+          color: #f9c320;
+      }
     }
     button{
       background: none;

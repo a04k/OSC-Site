@@ -19,8 +19,7 @@ import Footer from "./Components/footer"
 const BlogPage = () => {
   return (
     <div className="blog-container">
-      <Navbar></Navbar>
-      <Footer></Footer>
+
     </div>
   );
 };

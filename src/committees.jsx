@@ -3,11 +3,8 @@ import Navbar from "./Components/nav";
 
 const Committees = () => {
   return (
-    <div>
-    <Navbar/>
-    <div className="commitees">
+    <div className="commiteesPage">
 
-    </div>
     </div>
   );
 };
