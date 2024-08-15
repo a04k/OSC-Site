@@ -1,4 +1,3 @@
-// src/layout.jsx
 import React from 'react';
 import Navbar from './Components/nav';
 import Footer from './Components/footer';

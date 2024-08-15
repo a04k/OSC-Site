@@ -33,6 +33,11 @@
   }
 }
 
+::selection {
+  background-color: #f9c320; 
+  color: #000000;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
