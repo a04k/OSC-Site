@@ -1,6 +1,9 @@
 import { Link, useLocation } from 'react-router-dom';
 import '../assets/stylesheets/nav.scss';
 import logo from '../assets/images/logo.svg';
+import fb from '../assets/images/fb.svg';
+import gh from '../assets/images/github.svg';
+import li from '../assets/images/linkedin.svg';
 
 export default function Navbar() {
   const location = useLocation();
@@ -22,6 +25,11 @@ export default function Navbar() {
         <li><Link to="/blog">Blog</Link></li>
         <li><Link to="/committees">Committees</Link></li>
       </ul>
+      <div className='socials'>
+        <a href="https://github.com/Open-Source-Community"><img src={gh} alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/company/osc---open-source-community/"><img src={li} alt="LinkedIn" /></a>
+        <a href="https://www.facebook.com/oscgeeks"><img src={fb} alt="Facebook" /></a>
+      </div>
     </nav>
   );
 }

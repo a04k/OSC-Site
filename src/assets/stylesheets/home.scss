@@ -38,9 +38,10 @@
     h3{
       font-family: jetbrains mono;
       color: #ffffff;
+      opacity: 0.75;
       
       &:hover{
-          color: #f9c320;
+          opacity:1;
       }
     }
     button{
