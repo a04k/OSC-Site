@@ -4,6 +4,7 @@ nav {
   align-items: center;
   display: flex; 
   justify-content: space-between;
+  position: relative; 
 
   .logo {
     img {
@@ -33,7 +34,7 @@ nav {
       }
     }
   }
-
+  
   a {
     cursor: pointer;
     opacity: 1;

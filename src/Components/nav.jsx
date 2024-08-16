@@ -8,8 +8,7 @@ export default function Navbar() {
 
   // Function to check if the current location is the home page
   const isHome = () => currentLocation === '/';
-  
-  
+
   return (
     <nav>
       <div className="logo">

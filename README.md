@@ -10,9 +10,16 @@
 - Omar Ali 
 - [Noureen Ahmed](https://github.com/Noureen-Ahmed)
 
-## Setting up your local dev Environment
+## Setting up your local development Environment
 
-### First install the requirements and node modules by running the install script 
+### Clone The Repository To Your Machine
+
+```bash
+cd 'DIRECTORYNAME'
+git clone https://github.com/a04k/OSC-Site.git
+```
+
+### Install Project Dependencies Using The Install Script
 
 ```bash
 npm install
@@ -20,7 +27,7 @@ npm install
 bun install
 ```
 
-### Then run your local development envrionment
+### Then Run Your Local Development Server
 
 ```bash
 npm run dev
