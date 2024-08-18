@@ -61,15 +61,15 @@
 
 
 .About {
-  height: 100vh;
+  min-height: 95vh;
   flex-direction: column;
   font-family: jetbrains mono;
 
   h1{
-    font-size: 5rem;
+    font-size: 6rem;
     margin-right: 10vw;
     color:rgb(204, 128, 28);
-    margin-bottom: 2vh
+    margin-bottom: 7.5vh
   }
   h2{
     color: #f9c320;

@@ -1,5 +1,3 @@
-import Navbar from "./Components/nav";
-import Footer from "./Components/footer"
 // const blogData = [
 //   {
 //     id: 1,

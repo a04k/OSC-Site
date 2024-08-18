@@ -14,7 +14,6 @@ export default function Home() {
 
   const handleScroll = () => {
     const secTwo = document.getElementById('about');
-    secTwo.style.display ='flex';
     secTwo.scrollIntoView({ behavior: 'smooth' }); 
   };
 

@@ -11,6 +11,11 @@ export default function Navbar() {
 
   // Function to check if the current location is the home page
   const isHome = () => currentLocation === '/';
+  
+  const handleScroll = () => {
+    const secTwo = document.getElementById('about');
+    secTwo.scrollIntoView({ behavior: 'smooth' }); 
+  };
 
   return (
     <nav>
@@ -20,15 +25,15 @@ export default function Navbar() {
         </Link>
       </div>
       <ul>
-        {/* Conditionally render the "About" link based on whether we're on the home page */}
-        {isHome() ? null : <li><Link to="/about">About</Link></li>}
+        {/* Conditionally change the "About" link function based on whether we're on the home page */}
+        {isHome() ? <li onClick={handleScroll}><a>About</a></li > : <li><Link to="/about">About</Link></li>}
         <li><Link to="/blog">Blog</Link></li>
         <li><Link to="/committees">Committees</Link></li>
       </ul>
       <div className='socials'>
-        <a href="https://github.com/Open-Source-Community"><img src={gh} alt="GitHub" /></a>
-        <a href="https://www.linkedin.com/company/osc---open-source-community/"><img src={li} alt="LinkedIn" /></a>
-        <a href="https://www.facebook.com/oscgeeks"><img src={fb} alt="Facebook" /></a>
+        <a href="https://github.com/Open-Source-Community" target= "_blank"><img src={gh} alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/company/osc---open-source-community/" target= "_blank"><img src={li} alt="LinkedIn" /></a>
+        <a href="https://www.facebook.com/oscgeeks" target= "_blank"><img src={fb} alt="Facebook" /></a>
       </div>
     </nav>
   );
