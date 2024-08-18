@@ -6,7 +6,7 @@ const Committees = () => {
       <div className="title">
         <h1>Our Committees</h1>
       </div>
-      <div className="grid">
+      {/* <div className="grid">
         <div className="card webCard">
           <h2>Web Committee</h2>
           <p>Description for Web Committee</p>
@@ -48,7 +48,7 @@ const Committees = () => {
           <h2>Content Creation</h2>
           <p>Description for Content Creation</p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
