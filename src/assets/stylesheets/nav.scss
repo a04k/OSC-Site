@@ -1,12 +1,12 @@
 nav {
   margin-top: 4vh;
+  margin-bottom: 4vh;
   top: 0;
   z-index: 1;
   align-items: center;
   display: flex;
   justify-content: space-between;
   position: relative;
-  margin-bottom: 4vh;
 
   .logo {
     img {
@@ -25,38 +25,59 @@ nav {
     gap: 2rem;
 
     li {
-      opacity:0.8;
-      border-bottom: 2px dashed #f4d822;
-      display: inline-block;
+      opacity: 0.8;
+      position: relative; // needed for the ::after 
       font-family: "JetBrains Mono", monospace;
       font-size: 1.4rem;
 
-      a:hover {
+      &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -2px; // adjust this value if the underline is too close or far
+        height: 2px; // underline height :)__)
+        width: 0;
+        background-color: #f4d822; 
+        transition: width 0.4s ease, left 0.4s ease;
+        border-radius: 1rem; 
+      }
+
+      &:hover::after {
+        width: 100%;
+        left: 0;
+      }
+
+      a {
+        cursor: pointer;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        display: inline-block;
+        transition: color 0.4s ease, opacity 0.4s ease;
+
+        &:hover {
+          color: #f4d822; // change the text color on hover
+        }
+      }
+
+      &:hover {
         opacity: 1;
-        color: #f4d822;
       }
     }
   }
 
-  a {
-    cursor: pointer;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-  }
-}
+  .socials {
+    display: flex;
+    gap: 15px;
 
-.socials {
-  display: flex;
-  gap: 15px;
+    img {
+      padding: 1px;
+      height: 2rem;
+      opacity: 0.8;
+      // border: 1px dashed #f9d120;
 
-  img {
-    padding:1px;
-    height: 2rem;
-    opacity: 0.8;
-    /* border: 1px dashed #f9d120; */
-    
-    &:hover{
-        opacity:1;
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }
