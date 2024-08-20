@@ -1,0 +1,20 @@
+.mainPost {
+  max-width: 1000px;
+  display: flex;
+  margin: auto;
+}
+
+table {
+  column-gap: 20px;
+}
+
+.postImage {
+  width: 500px;
+  display: flex;
+}
+
+.postBody {
+  /* padding: 20px; */
+  margin: 0;
+  font-size: 30px;
+}
