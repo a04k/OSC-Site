@@ -1,3 +1,7 @@
+import PostCard from '../Components/postCard.jsx'
+import PostPage from '../Components/postPage.jsx'
+import '../assets/stylesheets/blog.css'
+
 // const blogData = [
 //   {
 //     id: 1,
@@ -17,7 +21,17 @@
 const BlogPage = () => {
   return (
     <div className="blog-container">
+      <div className="blog-title">
+        <h1>Latest Posts</h1> 
+      </div>
+      {/* <PostCard />
+      <PostCard />
+      <PostCard />
+      <PostCard />
+      <PostCard /> */}
+      <PostCard />
 
+      {/* <PostPage /> */}
     </div>
   );
 };
