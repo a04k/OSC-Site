@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import "./assets/stylesheets/home.scss";
-import Arrow from "../src/assets/images/arrow.svg";
+// import Arrow from "../src/assets/images/arrow.svg";
 
 export default function Home() {
   const [text1] = useTypewriter({
@@ -16,10 +16,8 @@ export default function Home() {
   };
 
   return (
-    <div className="home">
+    <main className="home">
       <div className="hero">
-        {/* <h1 className="aB">{'>'}</h1> */}
-
         <h1 id="osctxt">
           <span className="OSCText">{text1}</span>
           <span id="cursor">
@@ -27,10 +25,9 @@ export default function Home() {
           </span>
         </h1>
         <div className="more" onClick={handleScroll}>
-          <h3>MORE</h3>
-          <button className="arrow-button">
-            <img src={Arrow} alt="Scroll Down Arrow" />
-          </button>
+          <h3>
+            MORE <span className="arrow">-&gt;</span>
+          </h3>
         </div>
       </div>
       <div className="About" id="about">
@@ -57,6 +54,6 @@ export default function Home() {
           with a variety of ventures.
         </p>
       </div>
-    </div>
+    </main>
   );
 }
