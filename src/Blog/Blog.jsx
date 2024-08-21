@@ -1,7 +1,10 @@
 import PostCard from '../Components/postCard.jsx'
 import PostPage from '../Components/postPage.jsx'
+<<<<<<< Updated upstream
 import '../assets/stylesheets/blog.css'
 
+=======
+>>>>>>> Stashed changes
 // const blogData = [
 //   {
 //     id: 1,
@@ -21,17 +24,27 @@ import '../assets/stylesheets/blog.css'
 const BlogPage = () => {
   return (
     <div className="blog-container">
+<<<<<<< Updated upstream
       <div className="blog-title">
         <h1>Latest Posts</h1> 
       </div>
+=======
+>>>>>>> Stashed changes
       {/* <PostCard />
       <PostCard />
       <PostCard />
       <PostCard />
+<<<<<<< Updated upstream
       <PostCard /> */}
       <PostCard />
 
       {/* <PostPage /> */}
+=======
+      <PostCard />
+      <PostCard /> */}
+
+      <PostPage />
+>>>>>>> Stashed changes
     </div>
   );
 };
