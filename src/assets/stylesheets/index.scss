@@ -63,17 +63,8 @@ a {
         padding: 1rem;
     }
     
-    main {
-        flex: 1; /* This makes the main content area grow to fill available space */
-    }
-    
-    footer {
-        background-color: #333;
-        color: #fff;
-        padding: 1rem;
-        text-align: center;
-    }
 }
+
 
 body{
     overflow-x:hidden;
@@ -93,4 +84,5 @@ svg {
   path {
     animation: colorChange1 8s infinite linear;
   }
+
 }
