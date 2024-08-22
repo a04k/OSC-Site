@@ -1,0 +1,62 @@
+nav {
+  margin-top: 4vh;
+  top: 0;
+  z-index: 1;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 50px; /*adding a margin to increase beauty*/
+
+  .logo {
+    img {
+      height: 3.5rem;
+      margin-right: 3rem;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 2rem;
+
+    li {
+      opacity:0.8;
+      border-bottom: 2px dashed #f4d822;
+      display: inline-block;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 1.4rem;
+
+      a:hover {
+        opacity: 1;
+        color: #f4d822;
+      }
+    }
+  }
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+
+  img {
+    padding:1px;
+    height: 2rem;
+    opacity: 0.8;
+    /* border: 1px dashed #f9d120; */
+    
+    &:hover{
+        opacity:1;
+    }
+  }
+}

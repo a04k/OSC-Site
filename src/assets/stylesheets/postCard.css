@@ -1,0 +1,76 @@
+<<<<<<< Updated upstream
+div.postCard {
+  max-width: 60vw;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.06); /* Slight white tint with transparency */
+  backdrop-filter: blur(10px); /* Glass effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+
+div.postCard:hover {
+  border: 2px solid orange;
+  transition: 50ms;
+}
+
+.title {
+  font-family: jetBrains mono;
+  margin: 0;
+  font-size: 32px;
+}
+
+.puplisherInfo {
+  font-size: 14px;
+  margin: 5px 0 5px 0;
+  color: rgb(236, 154, 0);
+}
+
+.discription {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+}
+
+/* arrow */
+.titleContainer {
+  display: flex;
+  text-align: center;
+}
+
+/*  */
+
+
+
+=======
+
+div.postCard {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  /* padding: 10px 0 10px 0; */
+}
+
+div.postCard div.image img {
+  width: 100%;
+  /* height: 180px; */ /* if you make it the photo will be stretched */
+} 
+
+div.postCard h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+div.postCard p.info {
+  font-size: 13px;
+  margin: 0;
+}
+
+div.postCard p.description {
+  font-size: 15px;
+  margin-top: 6px;
+}
+>>>>>>> Stashed changes
