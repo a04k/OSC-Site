@@ -1,94 +1,105 @@
 .postCard {
-  max-width: 60vw;
-  min-height: 30vh;
-  margin: 0 auto 2.5vh auto;
-  padding: 25px;
-  border-radius: 25px;
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  align-items: center;
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 20px;
-  text-decoration: none;
-  color: inherit;
-  position: relative; /* Needed for absolute positioning of the arrow */
+    max-width: 60vw;
+    min-height: 30vh;
+    margin: 0 auto 2.5vh auto;
+    padding: 25px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 20px;
+    text-decoration: none;
+    color: inherit;
+    position: relative; /* Needed for absolute positioning of the arrow */
 }
 
 .postCard:hover {
-  border: 2px solid orange;
-  transition: 50ms;
+    border: 2px solid orange;
+    transition: 50ms;
 }
 
-.postCard:link, 
-.postCard:visited, 
-.postCard:hover, 
+.postCard:link,
+.postCard:visited,
+.postCard:hover,
 .postCard:active {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 .postCard .image img {
-  width: 100%;
-  border-radius: 15px;
-  height: auto;
+    width: 100%;
+    border-radius: 15px;
+    height: auto;
 }
 
 .postCard .body {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .postCard h2 {
-  font-size: 32px;
-  margin: 0;
-  font-family: 'JetBrains Mono', monospace;
-  color: inherit;
+    font-size: 32px;
+    margin: 0;
+    font-family: "JetBrains Mono", monospace;
+    color: inherit;
 }
 
-.postCard p.info {
-  font-size: 14px;
-  margin: 5px 0;
-  color: rgb(236, 154, 0);
+.postCard p.author-date-info {
+    font-size: 14px;
+    margin: 5px 0;
+    color: rgb(236, 154, 0);
 }
 
 .postCard p.description {
-  font-size: 15px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 600;
-  margin-top: 6px;
-  color: inherit;
+    font-size: 15px;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+    font-weight: 600;
+    margin-top: 6px;
+    color: inherit;
 }
 
 .postCard:hover p.info {
-  color: rgb(236, 154, 0);
+    color: rgb(236, 154, 0);
 }
 
 .postCard:hover h2,
 .postCard:hover p.description {
-  color: inherit;
+    color: inherit;
 }
 
 /* Arrow Styling */
 .arr {
-  position: absolute;
-  bottom: 12px;
-  right: 35px;
-  font-size: 2rem;
-  color: orange;
-  display: inline-block;
-  transition: transform 0.3s ease;
+    position: absolute;
+    bottom: 12px;
+    right: 35px;
+    font-size: 2rem;
+    color: orange;
+    display: inline-block;
+    transition: transform 0.3s ease;
 }
 
 .postCard:hover .arr {
-  transform: translateX(5px); /* Moves the arrow to the right on hover */
+    transform: translateX(5px); /* Moves the arrow to the right on hover */
 }
 
 .arr::before {
-  content: '→';
-  display: inline-block;
-  font-size: 2rem;
-  color: orange;
-  margin-left: 5px; 
+    content: "→";
+    display: inline-block;
+    font-size: 2rem;
+    color: orange;
+    margin-left: 5px;
 }
