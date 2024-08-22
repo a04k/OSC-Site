@@ -1,5 +1,6 @@
 .postCard {
-    max-width: 60vw;
+    width:65vw;
+    max-width: 65vw;
     min-height: 30vh;
     margin: 0 auto 2.5vh auto;
     padding: 25px;
