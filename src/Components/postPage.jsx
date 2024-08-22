@@ -1,7 +1,7 @@
 import '../assets/stylesheets/postPage.css' 
 // import '../assets/stylesheets/postCard.css' 
 
-
+    
 export default function postPage() {
   return (
     <div className='mainPost'>
@@ -14,7 +14,6 @@ export default function postPage() {
         </div>
         <div className='info'>
           Author: Ammarr Elsaied
-          <br />
           Date: anything 
         </div>
       </div>

@@ -1,99 +1,129 @@
-.committeesPage {
-  min-height: 90vh;
-  padding: 0 2rem;
-  margin-bottom: 7.5vh;
+$button-bg: rgba(255, 255, 255, 0.1);
+$button-active-bg: orange;
+$button-text-color: #fff;
+$button-border-radius: 30px;
+$button-padding: 10px 20px;
+$button-font-size: 1rem;
+$card-bg: rgba(255, 255, 255, 0.06);
+$card-border: 2px solid orange;
+$card-hover-transform: scale(1.02);
+$card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
+.committeesPage {
+    
   .title {
+    text-align: center;
+    margin-bottom: -5vh;
     h1 {
-      margin-top:0vh;
+      font-size: 6rem;
       color: orange;
       font-family: 'JetBrains Mono', monospace;
-      font-size: 6rem;
-      text-align: center;
     }
   }
+  
+  .filter-container {
+    display: flex;
+    justify-content: center;
+    background-color: $button-bg;
+    border-radius: $button-border-radius;
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    margin-bottom:9vh;
+    text-align:center;
 
+
+    
+    .filter-btn {
+
+      
+      &.active {
+        color: $button-text-color;
+      }
+      
+      &:hover:not(.active) {
+        color: darken($button-text-color, 10%);
+      }
+    }
+  }
+  
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-    margin-top: 2rem;
+    gap: 20px;
+    
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      border-radius: 15px;
+      background: $card-bg;
+      backdrop-filter: blur(10px);
+      box-shadow: $card-shadow;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.3s ease, border 0.3s ease;
+      position: relative;
+      
+      &:hover {
+        transform: $card-hover-transform;
+        border: $card-border;
+      }
+      
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        font-family: 'JetBrains Mono', monospace;
+      }
+      
+      p {
+        font-size: 1rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: 5px;
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+
+  .slider {
+    position: absolute;
+    height: calc(100% - 10px);
+    background-color: orange;
+    border-radius: 25px;
+    top: 5px;
+    left: 5px;
   }
 
-  .card {
-    background: rgba(150, 70, 0, 0.2   ); /* 0.7 is the opacity value */
-    border-radius: 8px;
-    padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-  
+  .filter-btn {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
 
-    &:hover {
-      transform: scale(1.015);
+    &.active {
+      color: #fff;
     }
 
-    h2 {
-      font-family: 'JetBrains Mono', monospace;
-      color: white;
-      font-size: 1.5rem;
-    }
-
-    p {
-      font-family: 'JetBrains Mono', monospace;
-      color: grey;
-      font-size: 1rem;
+    &:hover:not(.active) {
+      color: darken(#fff, 10%);
     }
   }
-
-  /* .webCard {
-    grid-column: span 4;
-    grid-row: span 2;
-  }
-
-  .linuxCard {
-    grid-column: span 3;
-    grid-row: span 6;
-  }
-
-  .ccCard {
-    grid-column: span 5;
-    grid-row: span 1;
-  }
-
-  .hrCard{
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-
-  .prCard {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-
-  .blenderCard {
-    grid-column: span 2;
-    grid-row: span 2;
-  }
-
-  .gameCard{
-    grid-column: span 2;
-    grid-row: span 4;
-  }
-
-  .uiCard {
-    grid-column: span 1;
-    grid-row: span 4;
-  }
-
-  .flutterCard {
-    grid-column: span 4;
-    grid-row: span 1;
-  }
-
-  .stCard {
-    grid-column: span 4;
-    grid-row: span 3;
-  }
-
-  */
 }
