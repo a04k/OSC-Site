@@ -32,7 +32,6 @@ export default function Home() {
       </div>
       <div className="About" id="about">
         <h1>About Us</h1>
-        <h2>Who Are We?</h2>
         <p>
           We are a student activity founded on December 5th 2013 and located in
           Ain Shams University Faculty of Computer and Information Science. We
