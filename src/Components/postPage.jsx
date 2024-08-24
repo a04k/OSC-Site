@@ -27,11 +27,9 @@ const PostPage = () => {
   }
 
   return (
-    <div>
-      <div>
-        <button onClick={() => navigate(-1)} className="back-button">Back</button>
-      </div>
+    <main>
       <article className="post-page">
+        <button onClick={() => navigate(-1)} className="back-button">Back</button>
         <header className="post-header">
           <h1 className="post-title">{post.title}</h1>
           <div className="post-meta">
@@ -43,7 +41,7 @@ const PostPage = () => {
         </div>
         <div className="post-content" dangerouslySetInnerHTML={{ __html: post.post }} />
       </article>
-    </div>
+    </main>
   );
 };
 

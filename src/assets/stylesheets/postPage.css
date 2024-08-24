@@ -1,10 +1,19 @@
+.post-page {
+  position: relative;
+  max-width: 1000px;
+  min-height: 90vh;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
 .back-button {
-  margin-left: 5px;
-  background:none;
-  border: dotted 2px orange;
+  margin-top: -4vh;
+  position: absolute;
+  background: none;
+  border: solid 1px #ffffff;
   border-radius: 10px;
   color: #ffffff;
-  margin-bottom: 0vh;
   font-family: 'JetBrains Mono', monospace;
   font-size: 1.2rem;
   cursor: pointer;
@@ -12,6 +21,11 @@
   align-items: center;
   transition: transform 0.3s ease;
   text-decoration: none;
+  padding: 8px 12px;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
 }
 
 .back-button:before {
@@ -22,19 +36,11 @@
 }
 
 .back-button:hover {
-  transform: translateX(-10px);
-}
-
-.post-page {
-  max-width: 1000px;
-  min-height: 90vh;
-  margin: 0 auto;
-  padding: 40px 20px;
-  text-align: center;
+  transform: translateX(-50%) scale(1.1);
 }
 
 .post-header {
-  margin-top: -5vh;
+  margin-top: 20px;
   margin-bottom: 40px;
 }
 

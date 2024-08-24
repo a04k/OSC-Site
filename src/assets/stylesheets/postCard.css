@@ -84,7 +84,6 @@
     color: inherit;
 }
 
-/* Arrow Styling */
 .arr {
     position: absolute;
     bottom: 12px;
@@ -96,7 +95,7 @@
 }
 
 .postCard:hover .arr {
-    transform: translateX(5px); /* Moves the arrow to the right on hover */
+    transform: translateX(5px); 
 }
 
 .arr::before {
