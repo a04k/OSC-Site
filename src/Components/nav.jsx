@@ -21,7 +21,7 @@ export default function Navbar() {
     <nav>
       <div className="logo">
         <Link to="/">
-          <img src={logo} alt="OSC Logo" />
+          <img src={logo} alt="OSC Logo" /> 
         </Link>
       </div>
       <ul>

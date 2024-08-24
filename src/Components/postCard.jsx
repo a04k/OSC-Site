@@ -1,6 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "../assets/stylesheets/postCard.css";
+import corvette from '../assets/images/corvette.jpg';  
 
 export default function PostCard({
   title,
@@ -12,7 +12,7 @@ export default function PostCard({
   return (
     <Link to={link} className="postCard">
       <div className="image">
-        <img src="src/assets/images/chevrolet_corvette.jpg" alt="" />
+        <img src={corvette}  />
       </div>
       <div className="body">
         <h2 className="ttl">{title}</h2>

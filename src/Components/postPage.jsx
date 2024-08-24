@@ -1,51 +1,50 @@
-import '../assets/stylesheets/postPage.css' 
-// import '../assets/stylesheets/postCard.css' 
+import { useEffect, useState } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { posts } from '../static/postdata.js'; 
+import '../assets/stylesheets/postPage.css';
+import corvette from '../assets/images/corvette.jpg';
 
+const PostPage = () => {
+  const { slug } = useParams();
+  const navigate = useNavigate();
+  const [post, setPost] = useState(null);
+
+  useEffect(() => {
+    const fetchPost = async () => {
+      try {
+        const fetchedPost = posts.find(p => p.slug === slug);
+        setPost(fetchedPost);
+      } catch (error) {
+        console.error('Error fetching post:', error);
+      }
+    };
     
-export default function postPage() {
+    fetchPost();
+  }, [slug]);
+
+  if (!post) {
+    return <div>Loading...</div>;
+  }
+
   return (
-    <div className='mainPost'>
-      <div className="postTitle">
-        <h1>Post Title</h1>
+    <div>
+      <div>
+        <button onClick={() => navigate(-1)} className="back-button">Back</button>
       </div>
-      <div className='imgAuthor'> 
-        <div className="postImage">
-          <img className='postImage' src="/src/assets/images/chevrolet_corvette.jpg" alt="" />
+      <article className="post-page">
+        <header className="post-header">
+          <h1 className="post-title">{post.title}</h1>
+          <div className="post-meta">
+            {post.author} · {post.date}
+          </div>
+        </header>
+        <div className="post-image">
+          <img src={corvette} alt={post.title} />
         </div>
-        <div className='info'>
-          Author: Ammarr Elsaied
-          Date: anything 
-        </div>
-      </div>
-      <div className="postData">
-        <p className='postBody'>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum expedita culpa cupiditate corporis optio esse. Illum minima neque, reiciendis id ipsam quia numquam, iste laudantium perspiciatis repudiandae maxime quis error! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum expedita culpa cupiditate corporis optio esse. Illum minima neque, reiciendis id ipsam quia numquam, iste laudantium perspiciatis repudiandae maxime quis error! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum expedita culpa cupiditate corporis optio esse. Illum minima neque, reiciendis id ipsam quia numquam, iste laudantium perspiciatis repudiandae maxime quis error!
-        </p>
-      </div>
-
-      {/* <table>
-        <tr>
-          <td>
-            <img className='postImage' src="/src/assets/images/chevrolet_corvette.jpg" alt="" />
-          </td>
-          <td rowSpan={2}>
-            <p className='postBody'>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum expedita culpa cupiditate corporis optio esse. Illum minima neque, reiciendis id ipsam quia numquam, iste laudantium perspiciatis repudiandae maxime quis error! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum expedita culpa cupiditate corporis optio esse. Illum minima neque, reiciendis id ipsam quia numquam, iste laudantium perspiciatis repudiandae maxime quis error! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum expedita culpa cupiditate corporis optio esse. Illum minima neque, reiciendis id ipsam quia numquam, iste laudantium perspiciatis repudiandae maxime quis error!
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p className='moreInfo'>
-              Ammarrs Elsaied
-              <a href="">
-                <img src="" alt="" />
-              </a>
-            </p>
-          </td>
-        </tr>
-      </table> */}
+        <div className="post-content" dangerouslySetInnerHTML={{ __html: post.post }} />
+      </article>
     </div>
-  )
-}
+  );
+};
 
+export default PostPage;

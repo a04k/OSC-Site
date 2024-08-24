@@ -5,9 +5,9 @@
 }
 
 .postCard {
-  margin-bottom: 2.5vh; /* Adds a 2.5vh gap between the cards */
-  text-decoration: none; /* Remove underline from links */
-  color: inherit; /* Ensure link does not change color */
+  margin-bottom: 2.5vh;
+  text-decoration: none;
+  color: inherit;
 }
 
 .blog-title {
@@ -18,5 +18,5 @@
 }
 
 h1 {
-  margin-top: 0px;   
+  margin-top: 0px;
 }

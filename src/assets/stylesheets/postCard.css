@@ -49,6 +49,7 @@
 }
 
 .postCard p.author-date-info {
+    font-family: abcB;
     font-size: 14px;
     margin: 5px 0;
     color: rgb(236, 154, 0);
@@ -71,6 +72,7 @@
     font-weight: 600;
     margin-top: 6px;
     color: inherit;
+    opacity: 0.65;
 }
 
 .postCard:hover p.info {
