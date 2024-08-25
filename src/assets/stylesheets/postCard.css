@@ -14,7 +14,7 @@
     gap: 20px;
     text-decoration: none;
     color: inherit;
-    position: relative; /* Needed for absolute positioning of the arrow */
+    position: relative; 
 }
 
 .postCard:hover {
@@ -42,7 +42,7 @@
 }
 
 .postCard h2 {
-    font-size: 32px;
+    font-size: 30px;
     margin: 0;
     font-family: "JetBrains Mono", monospace;
     color: inherit;

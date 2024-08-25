@@ -26,40 +26,22 @@ $card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     justify-content: center;
     background-color: $button-bg;
     border-radius: $button-border-radius;
-    padding: 5px;
-    padding-right:15px;
     width: fit-content;
-    margin: 0 auto 9vh;
+    margin: 0 auto;
     position: relative;
     overflow: hidden;
+    margin-bottom:9vh;
+    text-align:center;
 
-    .slider {
-      position: absolute;
-      height: calc(100% - 10px);
-      background-color: $button-active-bg;
-      border-radius: $button-border-radius;
-      top: 5px;
-      left: 5px;
-      transition: transform 0.3s ease, width 0.3s ease;
-    }
 
+    
     .filter-btn {
-      color: $button-text-color;
-      border: none;
-      padding: $button-padding;
-      font-size: $button-font-size;
-      text-align: center;
-      cursor: pointer;
-      background-color: transparent;
-      position: relative;
-      z-index: 1;
-      transition: color 0.3s ease;
-      font-family: 'JetBrains Mono', monospace;
 
+      
       &.active {
         color: $button-text-color;
       }
-
+      
       &:hover:not(.active) {
         color: darken($button-text-color, 10%);
       }
@@ -101,6 +83,47 @@ $card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         font-size: 1rem;
         text-align: center;
       }
+    }
+  }
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: 5px;
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+
+  .slider {
+    position: absolute;
+    height: calc(100% - 10px);
+    background-color: orange;
+    border-radius: 25px;
+    top: 5px;
+    left: 5px;
+  }
+
+  .filter-btn {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
+
+    &.active {
+      color: #fff;
+    }
+
+    &:hover:not(.active) {
+      color: darken(#fff, 10%);
     }
   }
 }
