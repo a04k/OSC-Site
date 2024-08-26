@@ -13,8 +13,8 @@
 
 
 :root {
-  padding-left: 8vw;
-  padding-right: 8vw;
+  margin-left: 8vw;
+  margin-right: 8vw;
   color-scheme: light dark;
   background-color: #0a0a0a;
   position: relative; 
@@ -22,7 +22,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-height: 100vh;
+  min-height: 120vh;
   
   &::after {
     content: '';
@@ -46,20 +46,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-  &:hover {
-    color: #535bf2;
-  }
-}
 
 .layout {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
-
 
     .header {
         background-color: #333;
@@ -68,8 +58,8 @@ a {
     }
     
     main{
-      margin-top:4vh;
-      margin-bottom:4vh;
+      margin-top:10vh;
+      margin-bottom:10vh;
     }
     
 }
@@ -131,5 +121,5 @@ svg {
     &:hover {
     transform: scale(1.1);
     border-color: #f9c320;
-    }
+    } 
 }

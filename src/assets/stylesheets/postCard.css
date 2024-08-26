@@ -57,18 +57,7 @@
 
 .postCard p.description {
     font-size: 15px;
-    font-family:
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Oxygen,
-        Ubuntu,
-        Cantarell,
-        "Open Sans",
-        "Helvetica Neue",
-        sans-serif;
+    font-family: roboto;
     font-weight: 600;
     margin-top: 6px;
     color: inherit;
