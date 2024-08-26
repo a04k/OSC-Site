@@ -8,6 +8,7 @@
   src: url('../fonts/ABCFavoritMono-Bold.woff2') format('woff2');
 }
 
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
@@ -85,8 +86,8 @@ svg {
   margin-left:67vw;
   filter: blur(30vw);
   @keyframes colorChange1 {
-    0%, 100% { fill: var(--color1, rgb(204, 128, 28)); } // Use default color if var(--color1) is not defined
-    50% { fill: var(--color2, #f9c320); } // Use default color if var(--color2) is not defined
+    0%, 100% { fill: var(--color1, rgb(204, 128, 28)); } 
+    50% { fill: var(--color2, #f9c320); } 
   }
 
   path {
@@ -115,20 +116,20 @@ svg {
   z-index: 1000;
   opacity: 0; /* Initially hidden */
   visibility: hidden; /* Initially hidden */
-}
 
-.scroll-to-top.show {
-  opacity: 1; /* Show button when scrolled */
-  visibility: visible; /* Show button when scrolled */
-}
-
-.scroll-to-top::before {
-  display: inline-block;
-  font-size: 2rem;
-  color: #ffffff;
-}
-
-.scroll-to-top:hover {
-  transform: scale(1.1);
-  border-color: #f9c320;
+    &.show {
+    opacity: 1; /* Shows button when scrolled */
+    visibility: visible; /* Shows button when scrolled */
+    }
+    
+    &::before {
+    display: inline-block;
+    font-size: 2rem;
+    color: #ffffff;
+    }
+    
+    &:hover {
+    transform: scale(1.1);
+    border-color: #f9c320;
+    }
 }
