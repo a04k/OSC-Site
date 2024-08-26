@@ -32,4 +32,22 @@
   h1 {
     margin-top: 0px;
   }
+  
+  .read-more-button{
+      padding: 10px;
+      font-family: jetbrains mono;
+      border: solid 1px;
+      border-radius: 7px;
+      margin-top: 5vh;
+      margin-bottom: 10vh;
+      font-size: 1.3rem;
+      opacity: 0.8;
+      background-color: transparent;
+      
+      &:hover{
+        opacity: 1;
+        cursor: pointer;
+        border-color: orange;
+      }
+  }
 }

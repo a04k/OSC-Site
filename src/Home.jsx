@@ -24,6 +24,7 @@ export default function Home() {
             <Cursor />
           </span>
         </h1>
+
         <div className="more" onClick={handleScroll}>
           <h3>
             MORE <span className="arrow">-&gt;</span>
