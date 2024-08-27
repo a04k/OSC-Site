@@ -10,18 +10,19 @@ $card-hover-transform: scale(1.02);
 $card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
 .committeesPage {
-  
   min-height: 100vh;
+
   .title {
     text-align: center;
     margin-bottom: -5vh;
+
     h1 {
       font-size: 6vw;
       color: orange;
       font-family: 'JetBrains Mono', monospace;
     }
   }
-  
+
   .filter-container {
     display: flex;
     justify-content: center;
@@ -31,29 +32,26 @@ $card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    margin-bottom:9vh;
-    text-align:center;
+    margin-bottom: 9vh;
+    text-align: center;
+    z-index: 2; // Ensure the filter container is above the cards
 
-
-    
     .filter-btn {
-
-      
       &.active {
         color: $button-text-color;
       }
-      
+
       &:hover:not(.active) {
         color: darken($button-text-color, 10%);
       }
     }
   }
-  
+
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    
+
     .card {
       display: flex;
       flex-direction: column;
@@ -67,19 +65,19 @@ $card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       text-decoration: none;
       color: inherit;
       transition: transform 0.3s ease, border 0.3s ease;
-      position: relative;
-      
+      z-index: 1; // Ensure the card is below the filter container
+
       &:hover {
         transform: $card-hover-transform;
         border: $card-border;
       }
-      
+
       h2 {
         font-size: 1.5rem;
         margin-bottom: 10px;
         font-family: 'JetBrains Mono', monospace;
       }
-      
+
       p {
         font-size: 1rem;
         text-align: center;
@@ -98,6 +96,7 @@ $card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  z-index: 2; // Ensure the filter container is above the cards
 
   .slider {
     position: absolute;

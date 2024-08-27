@@ -20,7 +20,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollThreshold = window.innerHeight * 0.02;
+      const scrollThreshold = window.innerHeight * 0.015;
       const isScrolled = window.scrollY > scrollThreshold;
       if (isScrolled !== scrolled) {
         setScrolled(isScrolled);

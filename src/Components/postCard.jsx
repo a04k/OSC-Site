@@ -14,12 +14,12 @@ export default function PostCard({
       <div className="image">
         <img src={corvette}  />
       </div>
-      <div className="body">
-        <h2 className="ttl">{title}</h2>
+      <div className="post-body">
+        <h2 className="post-title">{title}</h2>
         <p className="author-date-info">
           {author}, {postDate}
         </p>
-        <p className="description">{description}</p>
+        <p className="post-description">{description}</p>
       </div>
       <div className="arr"></div>
     </Link>
